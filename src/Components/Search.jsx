@@ -5,8 +5,8 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import Button from '@mui/material/Button';
 
 const Search = ({setWeatherData}) => {
-    const API_KEY = "03e4175ea8mshaddc1d2efafaf95p150540jsn11b8ae039ea3";
-    const API_HOST = "yahoo-weather5.p.rapidapi.com";
+  const API_KEY = process.env.REACT_APP_RAPIDAPI_KEY;
+  const API_HOST = process.env.REACT_APP_API_HOST;
   
     const [city, setCity] = useState("");
     
