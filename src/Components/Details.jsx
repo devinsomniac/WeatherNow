@@ -68,12 +68,12 @@ const Details = ({ weatherData }) => {
     <div className="flex flex-col justify-center items-center text-left flex-1 text-white sm:flex sm:justify-center sm:items-center sm:text-center">
       {getWeatherIcon(condition.text)}
       <h1 className="lg:text-9xl md:text-7xl">{condition.text || "N/A"}</h1>
-      <div className="details flex justify-center  flex-wrap sm:flex sm:justify-center sm:items-center sm:text-center">
-        <div className="condition h-24 w-40 mx-3 flex flex-col justify-center items-start sm:flex sm:justify-center sm:items-center sm:text-center">
+      <div className="details grid grid-cols-2 gap-4 text-center">
+        <div className="condition h-24 w-40 mx-3 flex flex-col justify-center items-center ">
           <p>Temperature: {condition.temperature || "N/A"}°C</p>
           <p>Condition: {condition.text || "N/A"}</p>
         </div>
-        <div className="wind h-24 w-40 mx-3 flex flex-col justify-center items-start sm:flex sm:justify-center sm:items-center sm:text-center">
+        <div className="wind h-24 w-40 mx-3 flex flex-col justify-center items-center ">
           <div className="wind-chill flex">
             <img
               width="30"
@@ -86,12 +86,12 @@ const Details = ({ weatherData }) => {
           <p>Direction: {wind.direction || "N/A"}</p>
           <p>Speed: {wind.speed || "N/A"} km/h</p>
         </div>
-        <div className="atmosphere h-24 w-40 mx-3 flex flex-col justify-center items-start">
+        <div className="atmosphere h-24 w-40 mx-3 flex flex-col justify-center items-center ">
           <p>Humidity: {atmosphere.humidity || "N/A"}%</p>
           <p>Visibility: {atmosphere.visibility || "N/A"} km</p>
           <p>Pressure: {atmosphere.pressure || "N/A"} hPa</p>
         </div>
-        <div className="astronomy h-24 w-40 sm:w-40 mx-3 flex flex-col justify-center items-start">
+        <div className="astronomy h-24 w-40 sm:w-40 mx-3 flex flex-col justify-center items-center ">
           <p>Sunrise: {astronomy.sunrise || "N/A"}</p>
           <p>Sunset: {astronomy.sunset || "N/A"}</p>
         </div>
