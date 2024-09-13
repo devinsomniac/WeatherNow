@@ -35,7 +35,7 @@ const WeekCard = ({ item }) => {
 
   return (
     <div className='px-4 py-5'>
-      <Box className="bg-white bg-opacity-10 backdrop-blur-lg shadow-lg rounded-lg h-36 w-28 rounded-md flex flex-col justify-center items-center">
+      <Box className="font-semibold bg-black border-2 bg-opacity-10 backdrop-blur-lg shadow-lg rounded-lg h-36 w-28 flex flex-col justify-center items-center">
         <h2>{item.day}</h2>
         <hr />
         <Box className="h-12 w-12 flex justify-center items-center">

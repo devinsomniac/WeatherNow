@@ -46,28 +46,28 @@ const Search = ({ setWeatherData }) => {
   return (
     <>
       <Box
-        className="px-3"
+        className="px-3 flex justify-center items-center py-3"
         sx={{ display: "inline-flex", alignItems: "flex-end" }}
       >
-        <LocationOnIcon sx={{ color: "white", mr: 1, my: 0.5 }} />
+        <LocationOnIcon sx={{ color: "black", mr: 1, my: 0.5 }} />
         <TextField
           onChange={handleChange}
-          className="text-white"
+          className="text-black"
           id="input-with-sx"
           label="Enter Your City"
           variant="standard"
           size="small"
           color="white"
           sx={{
-            input: { color: "white" },
-            label: { color: "white" },
-            "& .MuiInput-underline:before": { borderBottomColor: "white" },
-            "& .MuiInput-underline:after": { borderBottomColor: "white" },
+            input: { color: "black" },
+            label: { color: "black" },
+            "& .MuiInput-underline:before": { borderBottomColor: "black" },
+            "& .MuiInput-underline:after": { borderBottomColor: "black" },
             paddingRight: "20px",
           }}
         />
         <Button
-          variant="outlined"
+          variant="contained"
           onClick={handleSubmit}
           sx={{
             borderRadius: "50px",

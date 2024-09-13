@@ -12,7 +12,7 @@ const DateTime = () => {
     const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
     const formattedTime = `${hours}:${formattedMinutes} ${ampm}`;
   return (
-    <div className='inline text-white '>
+    <div className='inline text-black font-semibold '>
        | {formattedDate} | {formattedTime}
     </div>
   )

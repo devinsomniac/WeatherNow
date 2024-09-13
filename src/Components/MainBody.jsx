@@ -39,9 +39,9 @@ const MainBody = () => {
     };
    
   return (
-    <div className={`flex flex-col h-screen ${getBackgroundClass()} bg-cover bg-center`}>
+    <div className={`flex flex-col h-screen ${getBackgroundClass()} bg-cover bg-center sm:bg-center md:bg-center lg:bg-center xl:bg-center 2xl:bg-center`}>
         <div >
-        <Search setWeatherData = {setWeatherData}/>
+        <Search className="flex justify-center items-center" setWeatherData = {setWeatherData}/>
         <DateTime />
         </div>
         <Details 
@@ -53,3 +53,4 @@ const MainBody = () => {
 }
 
 export default MainBody
+

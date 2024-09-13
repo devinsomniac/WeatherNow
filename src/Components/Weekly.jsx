@@ -1,17 +1,21 @@
 import React from 'react';
-import WeekCard from './weekCard';
+import WeekCard from './WeekCard';
 
 const Weekly = ({ weatherData }) => {
   const forecast = weatherData.forecasts || [];
-  const nextSevenDaysForecast = forecast.slice(1, 8); 
+  
+  // Slice the forecast array based on screen size
+  const nextForecastToDisplay = forecast.slice(1, 5);
 
   return (
-    <div className='flex-1 '>
+    <div className='flex-1'>
       <h1 className='text-center text-white'>This Week</h1>
-      <div className='justify-center items-center mt-5 flex flex-wrap'>
-        {nextSevenDaysForecast.map((item, index) => (
-          <WeekCard key={index} item={item} />
-        ))}
+      <div className='mt-5'>
+        <div className='flex flex-wrap justify-center items-center'>
+          {nextForecastToDisplay.map((item, index) => (
+            <WeekCard key={index} item={item} />
+          ))}
+        </div>
       </div>
     </div>
   );

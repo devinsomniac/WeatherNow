@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'sunny': "url('https://media1.tenor.com/m/OJ7WlTChrfoAAAAC/doge-dogecoin.gif')",
-        'cloudy': "url('https://media1.tenor.com/m/r0F3-kMPAtwAAAAd/moving-clouds-world-meteorological-day.gif')",
-        'rainy': "url('https://media1.tenor.com/m/eKkVgWmmoTcAAAAC/rain-window.gif')",
-        'thunderstorm': "url('https://media1.tenor.com/m/0i_YXir4wx8AAAAC/lightning-tunder.gif')",
-        'default': "url('https://media1.tenor.com/m/OJ7WlTChrfoAAAAC/doge-dogecoin.gif')",
+        'sunny': "url('./src/assets/sunny.gif')",
+        'cloudy': "url('./src/assets/cloud.gif')",
+        'rainy': "url('./src/assets/rainy.gif')",
+        'thunderstorm': "url('./src/assets/thunder.gif')",
+        'default': "url('./src/assets/sunny.gif')",
       },
       backgroundSize: {
         'cover': 'cover',
